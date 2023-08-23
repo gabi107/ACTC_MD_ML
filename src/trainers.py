@@ -116,7 +116,7 @@ class Trainers():
          bootstrap_idx              = h_params['bootstrap_idx']
          
          max_features = ['auto','sqrt','log2']
-         bootstrap = ['True', 'False']
+         bootstrap = [True, False]
 
          model = RandomForestRegressor(max_depth = max_depth, n_estimators = n_estimators, max_features = max_features[max_features_idx], min_weight_fraction_leaf = min_weight_fraction_leaf,bootstrap = bootstrap[bootstrap_idx])
 
